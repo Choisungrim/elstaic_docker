@@ -1,0 +1,25 @@
+server.name: kibana
+server.host: "0.0.0.0"
+
+# Elasticsearch 연결 설정
+elasticsearch:
+  hosts: ["http://elasticsearch:9200"]
+  username: "elastic"
+  password: "elastic123"
+  ssl:
+    verificationMode: none
+
+# 태스크 매니저 설정
+xpack.task_manager.enabled: true
+xpack.task_manager.max_workers: 1
+
+# 암호화 키 설정
+xpack.encryptedSavedObjects.encryptionKey: "q47b2Vw7EOeBVGdkLBoyiL35wjekwwMILe1Sr6G8CoA="
+xpack.reporting.encryptionKey: "q47b2Vw7EOeBVGdkLBoyiL35wjekwwMILe1Sr6G8CoA="
+xpack.security.encryptionKey: "q47b2Vw7EOeBVGdkLBoyiL35wjekwwMILe1Sr6G8CoA="
+
+# 보안 설정
+xpack.security.enabled: true
+
+# 모니터링 설정
+monitoring.ui.container.elasticsearch.enabled: true
