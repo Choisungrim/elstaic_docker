@@ -9,6 +9,7 @@ volumes:
 
 services:
   # Elastic search 설정
+  # Elastic search는 로그 수집 및 검색을 위한 데이터 저장소 역할을 합니다.
   elasticsearch:
     container_name: elasticsearch
     image: elasticsearch:7.17.16
